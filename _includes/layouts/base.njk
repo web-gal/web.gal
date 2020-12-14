@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 40em;
+      margin: 0 auto;
+      padding: 2em;
+      line-height: 1.5;
+    }
+    pre {
+      overflow: auto;
+      padding: .5em;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="{{ mdn }}">Abrir en MDN</a>
+  </nav>
+
+  <main>
+    {{ content | safe }}
+  </main>
+</body>
+</html>
